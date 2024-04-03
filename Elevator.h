@@ -18,6 +18,6 @@ public:
 	void switchStatus() { active = !active; };
 
 	void callElivator(int pStage);
-	int getElevatorNumber() { return ElevatorNumber; };
+	static int getElevatorNumber() { return ElevatorNumber; };
 };
 
