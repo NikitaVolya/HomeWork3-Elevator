@@ -29,4 +29,6 @@ int main()
 
     cout << "A elevator stage: " << a.getStage() << endl;
     cout << "B elevator stage: " << b.getStage() << endl;
+
+    cout << "Elevator number: " << a.getElevatorNumber();
 }
