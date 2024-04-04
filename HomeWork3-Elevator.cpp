@@ -11,6 +11,7 @@ int main()
     Elevator a(0, 5);
     Elevator b(-2, 3, -1, true);
 
+    cout << "Home work 3\n";
     cout << "A elevator stage: " << a.getStage() << endl;
     cout << "B elevator stage: " << b.getStage() << endl;
     cout << "------------------------------\n";
@@ -30,5 +31,16 @@ int main()
     cout << "A elevator stage: " << a.getStage() << endl;
     cout << "B elevator stage: " << b.getStage() << endl;
 
-    cout << "Elevator number: " << Elevator::getElevatorNumber();
+    cout << "Elevator number: " << Elevator::getElevatorNumber() << endl;
+
+    cout << "Home work 4\n";
+    Elevator c(0, 5, 2, true);
+    Elevator d(-2, 3, true);
+    Elevator g = d;
+
+    Elevator& nearest = c.getNearest(g, 1);
+    cout << "Nearest: " << nearest.getStage() << endl;
+    d.callElivator(3);
+    cout << "Upper: " << c.getUpper(d).getStage();
+
 }
